@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         forgotIv.setOnClickListener((view)->{
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(LoginActivity.this,ForgotPasswordActivity.class));
         });
 
         login.setOnClickListener((view)->{
